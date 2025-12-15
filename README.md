@@ -1,7 +1,9 @@
-# Amazing Awcss@0.0.0
+# 🎨 Amazing AwCSS @0.0.0
+
 <div align="center">
 
-# 🎨 AwCSS
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/mrawab/awcss?style=social)](https://github.com/mrawab/awcss/stargazers)
 
 ### A lightweight, modern CSS utility framework  
 **Clean • Minimal • Customizable**
@@ -75,7 +77,6 @@ Customize the entire theme from one place:
 | `.heading-small` | Sub headings |
 
 ### Text Helpers
-
 ```
 .body-text
 .muted-text
@@ -248,8 +249,8 @@ MIT License
 ## 👤 Author
 
 **Awab**  
-GitHub: **mrawab**
-@Awab Azhari Css Framework 
+GitHub: [mrawab](https://github.com/mrawab)  
+@Awab Azhari CSS Framework
 
 ---
 
