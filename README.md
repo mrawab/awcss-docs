@@ -31,201 +31,111 @@ Build fast, clean interfaces with simple utility classes and zero JavaScript.
 
 ## 📦 Getting Started
 
-### Include AwCSS
+Include AwCSS in your project:
 
-#### Local
 ```html
 <link rel="stylesheet" href="awcss.css">
 ```
 
-#### GitHub Pages
+Or via GitHub Pages:
+
 ```html
 <link rel="stylesheet" href="https://mrawab.github.io/awcss/awcss.css">
 ```
 
 ---
 
-## 🎨 CSS Variables
+## 🎨 Colors
 
-Customize the entire theme from one place:
+| Name | Class | Example |
+|------|-------|---------|
+| Primary | `.bg-primary` | <div class="bg-primary bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#3878c3</div> |
+| Secondary | `.bg-secondary` | <div class="bg-secondary bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#ff5722</div> |
+| Success | `.bg-success` | <div class="bg-success bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#28a745</div> |
+| Warning | `.bg-warning` | <div class="bg-warning bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#ffc107</div> |
+| Danger | `.bg-danger` | <div class="bg-danger bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#dc3545</div> |
+| Info | `.bg-info` | <div class="bg-info bd-rd-5" style="width:100px;height:30px;color:white;text-align:center;">#17a2b8</div> |
 
-```css
-:root {
-  --primary-color: #3878c3;
-  --secondary-color: #ff5722;
-  --success-color: #28a745;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
-}
-```
+**Text color examples:**
+
+<div class="text-primary">Primary Text</div>
+<div class="text-secondary">Secondary Text</div>
+<div class="text-success">Success Text</div>
+<div class="text-warning">Warning Text</div>
+<div class="text-danger">Danger Text</div>
+<div class="text-info">Info Text</div>
+<div class="text-highlight">Highlight Text</div>
+<div class="text-highlight-alt">Alt Highlight Text</div>
 
 ---
 
 ## ✍️ Typography
 
 ### Headings
-```html
-<h1 class="heading-large">Large Heading</h1>
-<h2 class="heading-medium">Medium Heading</h2>
-<h3 class="heading-small">Small Heading</h3>
-```
+<h1 class="heading-large">Heading Large</h1>
+<h2 class="heading-medium">Heading Medium</h2>
+<h3 class="heading-small">Heading Small</h3>
 
-| Class | Description |
-|-----|------------|
-| `.heading-large` | Big titles |
-| `.heading-medium` | Section headers |
-| `.heading-small` | Sub headings |
-
-### Text Helpers
-```
-.body-text
-.muted-text
-.highlight-text
-.center-text
-```
+### Body Text
+<div class="body-text">This is body-text example</div>
+<div class="muted-text">This is muted-text example</div>
+<div class="highlight-text">This is highlight-text example</div>
+<div class="center-text">This text is centered</div>
 
 ---
 
 ## ✨ Text Effects
 
-### Gradient & Image Text
-```html
+**Gradient Text**
 <h1 class="text-clip">Gradient Text</h1>
+
+**Image Text**
 <h1 class="text-clip-image">Image Text</h1>
+
+**Animated Image Text**
 <h1 class="text-clip-image-animated">Animated Text</h1>
-```
 
----
-
-## 🖍 Text Decorations
-
-```
-.text-shadow
-.text-shadow-dark
-.text-shadow-light
-.bold
-.italic
-.underline
-.upper
-.lower
-.caps
-```
-
----
-
-## 🛠 Utilities
-
-### Interaction
-```
-.no-user-select
-```
-
-### Text Colors
-```
-.text-primary
-.text-secondary
-.text-success
-.text-warning
-.text-danger
-.text-info
-.text-highlight
-.text-highlight-alt
-```
-
----
-
-## 🧱 Borders
-
-```html
-<div class="border border-primary">Box</div>
-```
-
-```
-.border
-.border-primary
-.border-secondary
-.border-success
-.border-warning
-.border-danger
-.border-info
-```
-
----
-
-## 🖌 Backgrounds
-
-```
-.bg-primary
-.bg-secondary
-.bg-success
-.bg-warning
-.bg-danger
-.bg-info
-.bg-muted
-.bg-highlight
-```
+**Text Decorations**
+<div class="text-shadow">Text Shadow</div>
+<div class="text-shadow-dark">Text Shadow Dark</div>
+<div class="text-shadow-light">Text Shadow Light</div>
+<div class="bold">Bold Text</div>
+<div class="italic">Italic Text</div>
+<div class="underline">Underline Text</div>
+<div class="upper">UPPERCASE</div>
+<div class="lower">lowercase</div>
+<div class="caps">Capitalized Text</div>
 
 ---
 
 ## 🔘 Buttons
 
-### Base Button
-```html
+**Basic Button**
 <button class="button">Button</button>
-```
 
-### Variants
-```html
+**Variants**
 <button class="button primary-button">Primary</button>
 <button class="button dangerous-button">Danger</button>
 <button class="button warning-button">Warning</button>
 <button class="button awcss-button">Outline</button>
-```
 
-```
-.primary-button
-.dangerous-button
-.warning-button
-.awcss-button
-.disable-box-shadow
-```
-
----
-
-## 🛒 Cart Button
-
-```html
+**Cart Button**
 <button class="cart-button">Add to Cart</button>
-```
-
-✔ Responsive padding  
-✔ Icon animation  
-✔ Hover & focus effects  
-
-Resize easily:
-```css
-.cart-button {
-  --font-size: 1.2rem;
-}
-```
 
 ---
 
-## 🔵 Border Radius
+## 🧱 Borders & Border Radius
 
-```
-.bd-rd-0
-.bd-rd-5
-.bd-rd-10
-.bd-rd-12
-.bd-rd-15
-.bd-rd-50
-```
+**Borders**
+<div class="border border-primary" style="padding:10px;">Primary Border</div>
+<div class="border border-success" style="padding:10px;">Success Border</div>
+<div class="border border-danger" style="padding:10px;">Danger Border</div>
 
-Example:
-```html
-<div class="bg-primary bd-rd-15">Rounded Box</div>
-```
+**Border Radius**
+<div class="bg-primary bd-rd-0" style="padding:10px;color:white;">bd-rd-0</div>
+<div class="bg-primary bd-rd-5" style="padding:10px;color:white;">bd-rd-5</div>
+<div class="bg-primary bd-rd-10" style="padding:10px;color:white;">bd-rd-10</div>
+<div class="bg-primary bd-rd-50" style="padding:10px;color:white;">bd-rd-50</div>
 
 ---
 
@@ -251,8 +161,6 @@ MIT License
 **Awab**  
 GitHub: [mrawab](https://github.com/mrawab)  
 @Awab Azhari CSS Framework
-
----
 
 <div align="center">
 
