@@ -38,7 +38,7 @@ Build fast, clean interfaces with simple utility classes and zero JavaScript.
 <link rel="stylesheet" href="awcss.css">
 ```
 
-#### GitHub Pages
+#### Html Use
 ```html
 <link rel="stylesheet" href="https://mrawab.github.io/awcss/awcss.css">
 ```
