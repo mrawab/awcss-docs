@@ -1,4 +1,4 @@
-# 🎨 Amazing AwCSS @0.0.01
+# 🎨 Amazing AwCSS @0.0.02
 
 <div align="center">
 
@@ -44,7 +44,28 @@ Build fast, clean interfaces with simple utility classes and zero JavaScript.
 ```
 
 ---
+## Start Pain free
 
+Awcss do the resets for you
+
+```css
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  outline: none;
+  border: none;
+}
+```
+
+---
 ## 🎨 CSS Variables
 
 Customize the entire theme from one place:
@@ -53,9 +74,18 @@ Customize the entire theme from one place:
 :root {
   --primary-color: #3878c3;
   --secondary-color: #ff5722;
+  --text-color: #0d0c0c;
+  --text-color-white: rgb(246, 246, 246);
+  --text-muted: #666;
+  --bg-color: #fefefe;
+  --bg-muted: #666;
+  --border-color: #ddd;
   --success-color: #28a745;
   --warning-color: #ffc107;
   --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  --highlight-color: #184476;
+  --highlight-alt: #3878c3;
 }
 ```
 
@@ -103,6 +133,7 @@ Customize the entire theme from one place:
 .text-shadow
 .text-shadow-dark
 .text-shadow-light
+.normal-text
 .bold
 .italic
 .underline
@@ -116,20 +147,28 @@ Customize the entire theme from one place:
 ## 🛠 Utilities
 
 ### Interaction
+
+allow you to disable users select
+
 ```
 .no-user-select
+```
+allow you to disable box shadow
+
+```
+.disable-box-shadow
 ```
 
 ### Text Colors
 ```
-.text-primary
-.text-secondary
-.text-success
-.text-warning
-.text-danger
-.text-info
-.text-highlight
-.text-highlight-alt
+.primary-text
+.secondary-text
+.success-text
+.warning-text
+.danger-text
+.info-text
+.highlight-text
+.highlight-text-alt
 ```
 
 ---
@@ -141,13 +180,12 @@ Customize the entire theme from one place:
 ```
 
 ```
-.border
-.border-primary
-.border-secondary
-.border-success
-.border-warning
-.border-danger
-.border-info
+.primary-border
+.secondary-border
+.success-border
+.warning-border
+.danger-border
+.info-border
 ```
 
 ---
@@ -176,18 +214,17 @@ Customize the entire theme from one place:
 
 ### Variants
 ```html
-<button class="button primary-button">Primary</button>
-<button class="button dangerous-button">Danger</button>
-<button class="button warning-button">Warning</button>
-<button class="button awcss-button">Outline</button>
+<button class="button primary">Primary</button>
+<button class="button dangerous">Danger</button>
+<button class="button warning">Warning</button>
+<button class="button awcss">Outline</button>
 ```
 
 ```
-.primary-button
-.dangerous-button
-.warning-button
-.awcss-button
-.disable-box-shadow
+.button.primary
+.button.dangerous
+.button.warning
+.button.awcss
 ```
 
 ---
@@ -211,15 +248,46 @@ Resize easily:
 
 ---
 
+## ➤ Send Button
+
+```html
+<button class="send-button"></button>
+```
+
+✔ Responsive padding  
+✔ Icon animation  
+✔ Hover & focus effects  
+
+Resize easily:
+```css
+.send-button {
+  --font-size: 1.2rem;
+}
+```
+Change text easily:
+```css
+.send-button::before {
+  content: "My Button before click";
+}
+.send-button::after {
+  content: "My Button after click";
+}
+```
+---
+
 ## 🔵 Border Radius
 
 ```
-.bd-rd-0
-.bd-rd-5
-.bd-rd-10
-.bd-rd-12
-.bd-rd-15
-.bd-rd-50
+.radius-0
+.radius-5
+.radius-10
+.radius-12
+.radius-15
+.radius-50
+.radius-10-15
+.radius-15-25
+.radius-15-10
+.radius-25-15
 ```
 
 Example:
