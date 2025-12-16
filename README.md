@@ -176,8 +176,10 @@ allow you to disable box shadow
 ## 🧱 Borders
 
 ```html
-<div class="border border-primary">Box</div>
+<div class="primary-border">Box</div>
 ```
+
+default to 2px solid
 
 ```
 .primary-border
@@ -277,13 +279,15 @@ Change text easily:
 
 ## 🔵 Border Radius
 
-```
+unit : px
+
+``` css
 .radius-0
 .radius-5
 .radius-10
 .radius-12
 .radius-15
-.radius-50
+.radius-50 /* 50% */
 .radius-10-15
 .radius-15-25
 .radius-15-10
@@ -292,7 +296,7 @@ Change text easily:
 
 Example:
 ```html
-<div class="bg-primary bd-rd-15">Rounded Box</div>
+<div class="bg-primary radius-15">Rounded Box</div>
 ```
 
 ---
