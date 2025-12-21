@@ -14,7 +14,7 @@ Build fast, clean interfaces with simple utility classes and zero JavaScript.
 [Utilities](#-utilities) •
 [Buttons](#-buttons) •
 [Forms](#forms) •
-[Typography](#-typography)
+[Typography](#%EF%B8%8F-typography)
 
 </div>
 
