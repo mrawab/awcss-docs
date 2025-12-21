@@ -1,4 +1,4 @@
-# 🎨 Amazing AwCSS @0.0.02
+# 🎨 Amazing AwCSS @0.0.03
 
 <div align="center">
 
@@ -13,6 +13,7 @@ Build fast, clean interfaces with simple utility classes and zero JavaScript.
 [Getting Started](#-getting-started) •
 [Utilities](#-utilities) •
 [Buttons](#-buttons) •
+[Forms](#-forms) •
 [Typography](#-typography)
 
 </div>
@@ -297,6 +298,154 @@ unit : px
 Example:
 ```html
 <div class="bg-primary radius-15">Rounded Box</div>
+```
+
+---
+## Forms
+1/ Login Example copy and paste : 
+
+```html
+ <form class="login-form-basic">
+      <h2>Login</h2>
+
+      <!-- Username input example -->
+      <div class="input-container validate">
+        <div class="container-info">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            minlength="3"
+            maxlength="100"
+            required
+          />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <p class="alert-text">invalid username</p>
+      </div>
+
+      <!-- Password input example -->
+      <div class="input-container validate">
+        <div class="container-info">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <i class="fa-solid fa-key"></i>
+        </div>
+        <p class="alert-text">invalid password</p>
+      </div>
+
+      <!-- login button -->
+      <input type="submit" value="Login" />
+      <div class="text-helper">
+        <a href="#">forgot password?</a>
+        <a href="/examples/signup.html">create a new account</a>
+      </div>
+    </form>
+```
+You can also use in body tag to center the form to view:
+``` html
+<body class="center-form">
+```
+
+``` css
+.center-form
+```
+---
+
+2/ Signup Example copy and paste : 
+
+```html
+ <form class="signup-form-basic">
+      <h2>Sign Up</h2>
+
+      <!-- Username input example -->
+      <div class="input-container validate">
+        <div class="container-info">
+          <label>Username</label>
+          <input type="text" required minlength="3" maxlength="20" />
+          <i class="fa-solid fa-user"></i>
+          <p class="alert-text">invalid username</p>
+        </div>
+
+       <!-- Email input example -->
+      </div>
+      <div class="input-container validate">
+        <div class="container-info">
+          <label>Email</label>
+          <input type="email" required />
+          <p class="alert-text">invalid email</p>
+          <i class="fa-solid fa-message"></i>
+        </div>
+      </div>
+
+       <!-- Password input example -->
+      <div class="input-container validate">
+        <div class="container-info">
+          <label>Password</label>
+          <input type="password" required minlength="8" maxlength="20" />
+          <i class="fa-solid fa-key"></i>
+          <p class="alert-text">invalid password</p>
+        </div>
+
+       <!-- Password input example -->
+      </div>
+      <div class="input-container validate">
+        <div class="container-info">
+          <label>Conform Password</label>
+          <input type="password" required minlength="8" maxlength="20" />
+          <i class="fa-solid fa-key"></i>
+          <p class="alert-text">invalid password</p>
+        </div>
+      </div>
+
+      <!-- Button input example -->
+      <input type="submit" value="Sign Up" />
+      <div class="text-helper">
+        <a href="/examples/login.html"
+          >already have an account?<span> login</span></a
+        >
+      </div>
+    </form>
+```
+You can also use in body tag to center the form to view:
+``` html
+<body class="center-form">
+```
+
+``` css
+.center-form
+```
+
+additional info :
+- you cdd vaildation for input by using validate :
+``` html
+ <div class="input-container validate">
+```
+
+``` css
+.input-container.validate
+```
+
+- all used awcss classes:
+
+``` css
+.center-form
+.login-form-basic
+.signup-form-basic
+.input-container.validate
+.alret-text
+.text-helper
+```
+
+- for now icons are imported ffrom font awesome using:
+```html
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 ```
 
 ---
