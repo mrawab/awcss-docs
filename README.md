@@ -348,14 +348,7 @@ Example:
       </div>
     </form>
 ```
-You can also use in body tag to center the form to view:
-``` html
-<body class="center-form">
-```
 
-``` css
-.center-form
-```
 ---
 
 2/ Signup Example copy and paste : 
@@ -413,16 +406,17 @@ You can also use in body tag to center the form to view:
       </div>
     </form>
 ```
-You can also use in body tag to center the form to view:
+
+additional info :
+- You can use in body tag to center the form to view:
 ``` html
 <body class="center-form">
 ```
 
 ``` css
-.center-form
+body.center-form
 ```
 
-additional info :
 - you add vaildation for input by using validate :
 ``` html
  <div class="input-container validate">
